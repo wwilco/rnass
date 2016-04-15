@@ -15,6 +15,19 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
     integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/signature-pad.css">
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39365077-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </head>
   <body>
 
@@ -2188,6 +2201,25 @@
                 </td>
               </tr>
             </table>
+            <table>
+              <tr>
+                <td>
+                  <div id="canvasDiv" style="display:block; padding-top:250px; padding-bottom:30px; padding-left:200px">
+                    <div id="signature-pad" class="m-signature-pad">
+                      <div class="m-signature-pad--body">
+                        <canvas></canvas>
+                      </div>
+                      <div class="m-signature-pad--footer">
+                        <div class="description">Sign above</div>
+                        <button type="button" class="button clear" data-action="clear">Clear</button>
+                        <button type="button" class="button save" data-action="save">Save</button>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+
 
             <table>
               <tr>
@@ -2308,18 +2340,16 @@
             </div>
             <div class="border-bottom"></div>
           </li>
-
         </ul>
       </div>
     </form>
-
-
     <br>
     <br>
     <br>
     <div class="">
 
     </div>
-
+    <script src="js/signature_pad.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
