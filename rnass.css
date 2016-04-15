@@ -1,0 +1,72 @@
+.form-section {
+    list-style: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    zoom: 1;
+    clear: both;
+}
+ul {
+  display:block;
+}
+form {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-line {
+  padding-left: 36px;
+  padding-right: 36px;
+  margin: 6px 0;
+  width: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  clear:both;
+  position: relative;
+  display: block;
+}
+.form-label {
+  font-weight: bold;
+}
+
+.border-bottom {
+  border-bottom: 1px solid lightgrey;
+}
+
+.form-table tr td {
+  padding-right: 60px;
+  padding-bottom: 10px;
+}
+.td-bottom {
+  padding-bottom:5px;
+}
+.td-bottom-big {
+  padding-bottom:20px;
+}
+.td-top {
+  padding-top:5px;
+}
+.td-right {
+  padding-right:5px;
+}
+.td-right-big {
+  padding-right:20px;
+}
+.td-left {
+  padding-left:5px;
+}
+.td-left-big {
+  padding-left:20px;
+}
+.td-all {
+  padding: 5px 5px 5px 5px;
+}
+
+@media screen and (max-width: 1300px) {
+  form {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

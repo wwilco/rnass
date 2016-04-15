@@ -1,0 +1,2325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RN</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+    integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="rnass.css" media="screen" title="no title" charset="utf-8">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <!-- <button type="button" name="button" class="btn btn-md btn-success">Push Me</button> -->
+
+    <form class="" action="index.html" method="post">
+      <div class="form-all">
+        <ul class="form-section">
+          <li class="form-line">
+            <div class="border-bottom"><h1>Nursing Assesment</h1></div>
+          </li>
+
+          <li class="form-line">
+            <div class="border-bottom">
+              <table class="form-table">
+                <tr>
+                  <td class="form-label">
+                    Assessment Type
+                  </td>
+                  <td>
+                    <input type="radio" name="assessment_type" value=""> Initial Assessment
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                    <input type="radio" name="assessment_type" value=""> Reassessment
+                  </td>
+                </tr>
+                <tr>
+                  <td class="form-label">
+                    Assessment Date
+                  </td>
+                  <td>
+                    <input class="form-control" type="datetime-local" name="name" value="">
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </li>
+
+          <li class="form-line">
+            <div class="border-bottom"><h3>Patient Information:</h3></div>
+          </li>
+
+          <li class="form-line">
+              <div class="float-right" style="float:right">
+                <table>
+                  <tr>
+                    <td class="form-label">
+                      Phone Number 1
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input size=12 class="form-control" type="text" name="phone" placeholder="Phone" value="">
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="">
+                <table>
+                  <tr>
+                    <td class="form-label">
+                      Full Name
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="form-control" type="text" name="first_name" placeholder="First Name" value="">
+                    </td>
+                    <td>
+                      <input class="form-control" type="text" name="last_name" placeholder="Last Name" value="">
+                    </td>
+                  </tr>
+                </table>
+              </div>
+          </li>
+
+          <li class="form-line">
+            <div class="float-right" style="float:right">
+              <table>
+                <tr>
+                  <td class="form-label">
+                    Phone Number 2
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input size=12 class="form-control" type="text" name="phone2" placeholder="Phone" value="">
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="">
+              <table>
+                <tr>
+                  <td class="form-label">
+                    E-mail
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input size=35 class="form-control" type="text" name="email" placeholder="anyname@yahoo.com" value="">
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+          </li>
+
+          <li class="form-line">
+
+            <div class="float-right" style="float:right">
+              <table>
+                <tr>
+                  <td style="float:right" class="form-label">
+                    Gender
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    <select class="form-control"  name="gender">
+                      <option></option>
+                      <option>Male</option>
+                      <option>Female</option>
+                      <option>Other</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <table>
+              <tr>
+                <td class="form-label">Address</td>
+              </tr>
+              <tr>
+                <td class="td-bottom" colspan="2">
+                  <input size=55 class="form-control" type="text" name="email" placeholder="Street Address 1" value="">
+                </td>
+              </tr>
+              <tr>
+                <td class="td-bottom" colspan="2">
+                  <input size=55 class="form-control" type="text" name="email" placeholder="Street Address 2" value="">
+                </td>
+              </tr>
+              <tr>
+                <td class="td-right td-bottom">
+                  <input size=25 class="form-control" type="text" name="city" placeholder="City" value="">
+                </td>
+                <td class="td-bottom">
+                  <input size=25 class="form-control" type="text" name="state" placeholder="State/Province" value="">
+                </td>
+              </tr>
+              <tr>
+                <td class="td-right td-bottom">
+                  <input size=25 class="form-control" type="text" name="zip_code" placeholder="Zip Code" value="">
+                </td>
+                <td class="td-bottom">
+                  <input size=25 class="form-control" type="text" name="country" value="USA">
+                </td>
+              </tr>
+            </table>
+
+          </li>
+
+          <li class="form-line">
+            <div class="td-bottom">
+              <table>
+                <tr>
+                  <td class="form-label">
+                    Date of Birth
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input size=35 class="form-control" type="date" name="birth_date" value="">
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="border-bottom">
+            </div>
+          </li>
+
+          <li class="form-line">
+            <div class="border-bottom"><h3>Service Information:</h3></div>
+          </li>
+
+          <li class="form-line">
+            <table class="form-table">
+              <tr>
+                <td class="form-label">
+                  Type of Service
+                </td>
+                <td>
+                  <select class="form-control" name="">
+                    <option></option>
+                    <option>HHA</option>
+                    <option>Skilled Nursing</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label">
+                  Number of Hours
+                </td>
+                <td>
+                  <select class="form-control" name="">
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label">
+                  Frequencey of Visits (per week)
+                </td>
+                <td>
+                  <select class="form-control" name="">
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+            <div class="border-bottom"></div>
+          </li>
+
+          <li class="form-line">
+            <div class="border-bottom"><h3>Vital Signs & Plan of Care Goals</h3></div>
+          </li>
+
+          <li class="form-line">
+            <table>
+              <tr>
+                <td class="form-label td-bottom">
+                  Weight
+                </td>
+                <td class="td-bottom">
+                  <input class="form-control" size=4 name="weight" value="">
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right">
+                  Temperature Current
+                </td>
+                <td style="padding-left:15px">
+                  <input class="form-control" size=4 name="temp_current" value="">
+                </td>
+                <td class="form-label td-right td-left">
+                  Temperature Goal
+                </td>
+                <td>
+                  <input class="form-control" size=4 name="temp_goal" value="">
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-top">
+                  Temperature Threshold
+                </td>
+                <td class="form-label td-right td-left td-top">
+                  <select class="form-control" name="temp_threshold1">
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </td>
+                <td class="form-label td-right td-left td-top">
+                  <select class="form-control" name="temp_threshold2">
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right td-top td-bottom">
+                  Temperature Details
+                </td>
+                <td colspan="2" class="td-all">
+                  <textarea name="temp_details" class="form-control" rows="2" cols="40"></textarea>
+                </td>
+              </tr>
+            </table>
+            <div class="border-bottom"></div>
+            <br>
+            <table>
+              <tr>
+                <td class="form-label td-right">
+                  Pulse Current
+                </td>
+                <td style="padding-left:15px">
+                  <input class="form-control" size=6 name="temp_current" value="">
+                </td>
+                <td class="form-label td-right td-left">
+                  Pulse Goal
+                </td>
+                <td>
+                  <input class="form-control" size=6 name="temp_goal" value="">
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-top">
+                  Pulse Threshold
+                </td>
+                <td class="form-label td-right td-left td-top">
+                  <select class="form-control" name="temp_threshold1">
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </td>
+                <td class="form-label td-right td-left td-top">
+                  <select class="form-control" name="temp_threshold2">
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right td-top td-bottom">
+                  Pulse Details
+                </td>
+                <td colspan="2" class="td-all">
+                  <textarea name="temp_details" class="form-control" rows="2" cols="40"></textarea>
+                </td>
+              </tr>
+            </table>
+
+            <div class="border-bottom"></div>
+            <br>
+            <table>
+              <tr>
+                <td class="form-label td-right">
+                  Blood Pressure Current
+                </td>
+                <td>
+                  <input class="form-control" size=6 name="temp_current" value="">
+                </td>
+                <td class="form-label td-right td-left">
+                  Blood Pressure Goal
+                </td>
+                <td>
+                  <input class="form-control" size=6 name="temp_goal" value="">
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-top">
+                  BP Threshold
+                </td>
+                <td class="form-label td-right td-left td-top">
+                  <select class="form-control" name="temp_threshold1">
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </td>
+                <td class="form-label td-right td-left td-top">
+                  <select class="form-control" name="temp_threshold2">
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right td-top td-bottom">
+                  BP Details
+                </td>
+                <td colspan="2" class="td-all">
+                  <textarea name="temp_details" class="form-control" rows="2" cols="40"></textarea>
+                </td>
+              </tr>
+            </table>
+
+            <div class="border-bottom"></div>
+            <br>
+            <table>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  Patient Height (if applicable)
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="text" class="form-control" size=3 name="name" value="">
+                </td>
+                <td class="form-label td-right td-bottom">
+                  Patient Weight (if applicable)
+                </td>
+                <td>
+                  <input type="text" class="form-control" size=3 name="name" value="">
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  Recent Significant Weight Loss?
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Yes
+                </td>
+                <td class="td-bottom">
+                  <input type="radio" name="name" value=""> No
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-right">
+                  If yes, amount lost:
+                </td>
+                <td>
+                  <input type="text" class="form-control" name="name" value="">
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr class="">
+                <td class="form-label td-right td-bottom td-top">
+                  Is there a Weight goal?
+                </td>
+                <td class="td-right td-bottom td-top">
+                  <input type="radio" name="name" value=""> Yes
+                </td>
+                <td class="td-bottom td-top">
+                  <input type="radio" name="name" value=""> No
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right td-bottom td-top">
+                  What is the goal amount?
+                </td>
+                <td class="td-right td-bottom td-top">
+                  <input type="text" class="form-control" size=4 name="name" value="">
+                </td>
+              </tr>
+            </table>
+            <table>
+              <td class="form-label td-top">
+                Weight Threshold
+              </td>
+              <td class="form-label td-right td-left td-top">
+                <select class="form-control" name="temp_threshold1">
+                  <option></option>
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+              </td>
+              <td class="form-label td-right td-left td-top">
+                <select class="form-control" name="temp_threshold2">
+                  <option></option>
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="form-label td-right td-top td-bottom">
+                Weight Details
+              </td>
+              <td colspan="2" class="td-all">
+                <textarea name="temp_details" class="form-control" rows="2" cols="40"></textarea>
+              </td>
+            </table>
+            <div class="border-bottom"></div>
+            <br>
+            <table>
+              <tr>
+                <td class="form-label td-right">
+                  Blood Glucose Level
+                </td>
+                <td>
+                  <input class="form-control" size=6 name="temp_current" value="">
+                </td>
+                <td class="form-label td-right td-left">
+                  Blood Glucose Goal
+                </td>
+                <td>
+                  <input class="form-control" size=6 name="temp_goal" value="">
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-top">
+                  BG Threshold
+                </td>
+                <td class="form-label td-right td-left td-top">
+                  <select class="form-control" name="temp_threshold1">
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </td>
+                <td class="form-label td-right td-left td-top">
+                  <select class="form-control" name="temp_threshold2">
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right td-top td-bottom">
+                  BG Details
+                </td>
+                <td colspan="2" class="td-all">
+                  <textarea name="temp_details" class="form-control" rows="2" cols="40"></textarea>
+                </td>
+              </tr>
+            </table>
+
+            <div class="border-bottom"></div>
+            <br>
+            <table>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  What's the client's current Appetite?
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Low
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Medium
+                </td>
+                <td class="td-bottom">
+                  <input type="radio" name="name" value=""> High
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  What's the client's Appetite Goal?
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Low
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Medium
+                </td>
+                <td class="td-bottom">
+                  <input type="radio" name="name" value=""> High
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  How many glasses of water is the client currently drinking each day?
+                </td>
+                <td>
+                  <input class="form-control" type="text" size=4 name="name" value="">
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  What's the goal number of glasses of water client should drink each day?
+                </td>
+                <td>
+                  <input class="form-control" type="text" size=4 name="name" value="">
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  How many hours of sleep is the client currently getting?
+                </td>
+                <td>
+                  <input class="form-control" type="text" size=4 name="name" value="">
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  What's the goal hours of sleep the client should be getting?
+                </td>
+                <td>
+                  <input class="form-control" type="text" size=4 name="name" value="">
+                </td>
+              </tr>
+            </table>
+            <!-- <br> -->
+            <table>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  What's the client's current emotional state/mood?
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Agitated
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Calm
+                </td>
+                <td class="td-bottom td-right">
+                  <input type="radio" name="name" value=""> Happy
+                </td>
+                <td class="td-bottom">
+                  <input type="radio" name="name" value=""> Sad
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  What's the client's goal emotional state?
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Agitated
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Calm
+                </td>
+                <td class="td-bottom td-right">
+                  <input type="radio" name="name" value=""> Happy
+                </td>
+                <td class="td-bottom">
+                  <input type="radio" name="name" value=""> Sad
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  Client's current level of activity?
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Low
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Moderate
+                </td>
+                <td class="td-bottom">
+                  <input type="radio" name="name" value=""> High
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  What's the goal level of activity?
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Low
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Moderate
+                </td>
+                <td class="td-bottom">
+                  <input type="radio" name="name" value=""> High
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  What's the client's level of involvement in their own care?
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Low
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Moderate
+                </td>
+                <td class="td-bottom">
+                  <input type="radio" name="name" value=""> High
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  What's the goal level of involvement in client's own care?
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Low
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Moderate
+                </td>
+                <td class="td-bottom">
+                  <input type="radio" name="name" value=""> High
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  What's the client's current observed energy level?
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Low
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Moderate
+                </td>
+                <td class="td-bottom">
+                  <input type="radio" name="name" value=""> High
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  What's the client's goal energy level?
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Low
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Moderate
+                </td>
+                <td class="td-bottom">
+                  <input type="radio" name="name" value=""> High
+                </td>
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  Medication Information
+                </td>
+                <td>
+                  <select class="form-control" name="medication1">
+                    <option></option>
+                    <option>option 1</option>
+                    <option>option 2</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  Medication Information
+                </td>
+                <td>
+                  <select class="form-control" name="medication2">
+                    <option></option>
+                    <option>option 1</option>
+                    <option>option 2</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  Medication Information
+                </td>
+                <td>
+                  <select class="form-control" name="medication3">
+                    <option></option>
+                    <option>option 1</option>
+                    <option>option 2</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  Client compliance with treament?
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Low
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Medium
+                </td>
+                <td class="td-bottom">
+                  <input type="radio" name="name" value=""> High
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  Goal compliance with treament?
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Low
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Medium
+                </td>
+                <td class="td-bottom">
+                  <input type="radio" name="name" value=""> High
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  Social Participation (with others, non-family)?
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Low
+                </td>
+                <td class="td-right td-bottom">
+                  <input type="radio" name="name" value=""> Medium
+                </td>
+                <td class="td-bottom">
+                  <input type="radio" name="name" value=""> High
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  What kind of social activities?
+                </td>
+                <td>
+                  <input size=35 type="text" class="form-control" name="name" value="">
+                </td>
+              </tr>
+            </table>
+            <br>
+            <div class="border-bottom"></div>
+          </li>
+
+          <li class="form-line">
+            <div class="border-bottom"><h3>Care Organizer Information:</h3></div>
+          </li>
+
+          <li class="form-line">
+
+            <div class="" style="padding-bottom:10px">
+              <table>
+                <tr>
+                  <td class="form-label td-right">
+                    Full Name
+                  </td>
+                  <td class="form-label td-right">
+                    Relationship
+                  </td>
+                  <td class="form-label td-right">
+                    Phone Number
+                  </td>
+                  <td class="form-label">
+                    E-mail
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-right">
+                    <input class="form-control" type="text" name="co_name" placeholder="Full Name" value="">
+                  </td>
+                  <td class="td-right">
+                    <select class="form-control" name="co_relationship">
+                      <option></option>
+                      <option>Family</option>
+                      <option>Friend</option>
+                      <option>Professional</option>
+                    </select>
+                  </td>
+                  <td class="td-right">
+                    <input size=12 class="form-control" type="text" name="co_phone" placeholder="Phone" value="">
+                  </td>
+                  <td>
+                    <input size=35 class="form-control" type="text" name="co_email" placeholder="anyemail@yahoo.com" value="">
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="border-bottom"></div>
+          </li>
+
+          <li class="form-line">
+            <div class="border-bottom"><h3>Living Situation:</h3></div>
+          </li>
+
+          <li class="form-line">
+            <div class="">
+              <table>
+                <tr>
+                  <td class="form-label">
+                    Dwelling:
+                  </td>
+                  <td class="form-label" style="padding-left:30px">
+                    Floor:
+                  </td>
+                  <td class="form-label" style="padding-left:10px">
+                    # of Rooms:
+                  </td>
+                  <td class="form-label">
+                    Elevator:
+                  </td>
+                </tr>
+                <tr>
+                  <td class="" style="padding-right:10px">
+                    <ul style="list-style:none; margin-left:-30px">
+                      <li><input type="radio" name="housing" value=""> House</li>
+                      <li><input type="radio" name="housing" value=""> Apartment</li>
+                      <li><input type="radio" name="housing" value=""> Other</li>
+                        <input style="margin-top:-20px; margin-left:15px" class="form-control" size=10 type="hidden" placeholder="Other" name="name">
+                    </ul>
+                  </td>
+                  <td class="" style="padding-right:25px">
+                    <input style="margin-top:-20px; margin-left:15px" class="form-control" size=3 type="text" name="name">
+                  </td>
+                  <td class="" style="padding-right:35px">
+                    <input style="margin-top:-20px; margin-left:15px" class="form-control" size=3 type="text" name="name">
+                  </td>
+                  <td>
+                    <select style="margin-top:-20px" class="form-control" name="">
+                      <option></option>
+                      <option>Yes</option>
+                      <option>No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </li>
+
+          <li class="form-line">
+            <table>
+              <tr>
+                <td class="form-label td-right">
+                  Lives Alone:
+                </td>
+                <td class="form-label td-right">
+                  If not, identify individuals in home:
+                </td>
+              </tr>
+              <tr>
+                <td style="display:block; margin-left:150px">
+                  <div style="margin-left:-110px">
+                    <input type="radio" name="live_alone" value=""> Yes <br>
+                    <input type="radio" name="live_alone" value=""> No
+                  </div>
+
+                </td>
+                <td>
+                  <textarea name="name" class="form-control" rows="1" cols="50"></textarea>
+                </td>
+              </tr>
+            </table>
+            <br>
+            <div class="border-bottom"></div>
+          </li>
+
+          <li class="form-line">
+            <div class="border-bottom"><h3>Health Information:</h3></div>
+          </li>
+
+          <li class="form-line">
+            <table>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  Principal Diagnosis (ICD-9-M)
+                </td>
+                <td class="td-bottom">
+                  <input type="text" class="form-control" name="name" value="">
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  Date of Diagnosis
+                </td>
+                <td class="td-bottom">
+                  <input type="date" class="form-control" name="name" value="">
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  Surgical Procedure (ICD-9-M)
+                </td>
+                <td class="td-bottom">
+                  <input type="text" class="form-control" name="name" value="">
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right">
+                  Date of Diagnosis
+                </td>
+                <td>
+                  <input type="date" class="form-control" name="name" value="">
+                </td>
+              </tr>
+            </table>
+            <br>
+            <table>
+              <tr>
+                <td class="form-label td-right">
+                  Other Pertinent Diagnoses (ICD-9-M)
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <textarea name="name" class="form-control" rows="2" cols="49"></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right">
+                  Allergies (if any)
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <textarea name="name" class="form-control" rows="2" cols="49"></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right">
+                  Nutritional requirements (if any)
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <textarea name="name" class="form-control" rows="2" cols="49"></textarea>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-right td-top">
+                  Prognosis
+                </td>
+                <td class="td-top">
+                  <input type="radio" name="name" value=""> Poor
+                  <input type="radio" name="name" value=""> Guarded
+                  <input type="radio" name="name" value=""> Fair
+                  <input type="radio" name="name" value=""> Good
+                  <input type="radio" name="name" value=""> Excelent
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-right td-top">
+                  Need for Palliative Care
+                </td>
+                <td class="td-top">
+                  <input type="radio" name="name" value=""> Yes
+                  <input type="radio" name="name" value=""> No
+                </td>
+              </tr>
+            </table>
+            <br>
+            <div class="border-bottom"></div>
+          </li>
+
+          <li class="form-line">
+            <div class="border-bottom"><h3>Hospitalization (if any in the last 3 months):</h3></div>
+          </li>
+
+          <li class="form-line">
+            <table>
+              <tr>
+                <td class="form-label">
+                  Hospital Name:
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input size=50 type="text" class="form-control" name="name" value="">
+                </td>
+              </tr>
+            <table/>
+            <table>
+              <tr>
+                <td class="form-label">
+                  Hospitalized Start Date
+                </td>
+                <td class="form-label">
+                  Hospitalized End Date
+                </td>
+              </tr>
+              <tr>
+                <td class="td-right">
+                  <input type="date" class=form-control name="name" value="">
+                </td>
+                <td>
+                  <input type="date" class=form-control name="name" value="">
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label">
+                  Hospital Contact
+                </td>
+                <td class="form-label">
+                  Title
+                </td>
+                <td class="form-label">
+                  Phone
+                </td>
+              </tr>
+              <tr>
+                <td class="td-right">
+                  <input type="text" class="form-control" name="name" value="">
+                </td>
+                <td class="td-right">
+                  <input type="text" class="form-control" name="name" value="">
+                </td>
+                <td>
+                  <input type="text" class="form-control" name="name" value="">
+                </td>
+              </tr>
+            </table>
+            <br>
+            <div class="border-bottom"></div>
+          </li>
+
+          <li class="form-line">
+            <div class="border-bottom"><h3>Patient Status:</h3></div>
+          </li>
+
+          <li class="form-line">
+            <table>
+              <tr>
+                <td class="form-label td-right">
+                  Is the patient alert?
+                </td>
+                <td class="td-right">
+                  <input type="radio" name="name" value=""> Always
+                </td>
+                <td class="td-right">
+                  <input type="radio" name="name" value=""> Sometimes
+                </td>
+                <td>
+                  <input type="radio" name="name" value=""> Never
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-right">
+                  Can patient direct caregiver?
+                </td>
+                <td class="td-right">
+                  <input type="radio" name="name" value=""> Yes
+                </td>
+                <td>
+                  <input type="radio" name="name" value=""> No
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label">
+                  If not, who is responsible (include relationship):
+                </td>
+              </tr>
+              <tr>
+                <td class="td-top td-bottom">
+                  <textarea name="name" class="form-control" rows="4" cols="50"></textarea>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label">
+                  Patient Height (if applicable)
+                </td>
+                <td>
+                  <input type="text" class="form-control" size=3 name="name" value="">
+                </td>
+                <td class="form-label">
+                  Patient Weight (if applicable)
+                </td>
+                <td>
+                  <input type="text" class="form-control" size=3 name="name" value="">
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-right">
+                  Recent Significant Weight Loss?
+                </td>
+                <td class="td-right">
+                  <input type="radio" name="name" value=""> Yes
+                </td>
+                <td>
+                  <input type="radio" name="name" value=""> No
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-right">
+                  If yes, amount lost:
+                </td>
+                <td>
+                  <input type="text" class="form-control" name="name" value="">
+                </td>
+              </tr>
+            </table>
+            <br>
+            <div class="border-bottom"></div>
+          </li>
+
+          <li class="form-line">
+            <div class="border-bottom"><h3>Impairments:</h3></div>
+          </li>
+
+          <li class="form-line">
+            <table>
+              <tr>
+                <td class="form-label">
+                  Describe any specific daily activities that require assistance:
+                </td>
+              </tr>
+              <tr>
+                <td class="td-bottom">
+                  <textarea name="name" class="form-control" rows="2" cols="60"></textarea>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-bottom-big" colspan="4">
+                  Sensory
+                </td>
+              </tr>
+              <tr>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  1. Speach
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> None
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> None
+                </td>
+              </tr>
+              <tr>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  2. Sight
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> None
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> None
+                </td>
+              </tr>
+              <tr>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  3. Hearing
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> None
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> None
+                </td>
+              </tr>
+
+              <tr>
+                <td class="form-label td-bottom-big" colspan="4">
+                  Muscular/Motor:
+                </td>
+              </tr>
+              <tr>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  1.Hand/Arm
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> None
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> None
+                </td>
+              </tr>
+              <tr>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  2. Upper Extremities
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> None
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> None
+                </td>
+              </tr>
+              <tr>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  3. Lower Extremities
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> None
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> None
+                </td>
+              </tr>
+
+              <tr>
+                <td class="form-label td-bottom-big" colspan="4">
+                  Cardiovascular/Respiratory:
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  1.Respiratory
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> None
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> None
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  2. Cardiac
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> None
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> None
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  3. Circulatory
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> None
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> None
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label">
+                  Describe any impairment impact on functional ability:
+                </td>
+              </tr>
+              <tr>
+                <td class="td-bottom">
+                  <textarea name="name" class="form-control" rows="2" cols="60"></textarea>
+                </td>
+              </tr>
+            </table>
+            <div class="border-bottom"></div>
+          </li>
+
+          <li class="form-line">
+            <div class="border-bottom"><h3>Mental Status:</h3></div>
+          </li>
+
+          <li class="form-line">
+            <table>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  1. Disoriented Place & Time
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Never
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Somtimes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Often
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  2. Anxiety
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Never
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Somtimes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Often
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  3. Agitation
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Never
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Somtimes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Often
+                </td>
+              </tr>
+
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  4. Short-term memory loss
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Never
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Somtimes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Often
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  5. Wanders
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Never
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Somtimes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Often
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  6. Depression
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Never
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Somtimes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Often
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  7. Impaired judgement
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Never
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Somtimes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Often
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  8. Danger to Others
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Never
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Somtimes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Often
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  9. Danger to Self
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Never
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Somtimes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Often
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  10. Articulates Needs
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Never
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Somtimes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Often
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  11. Difficulty sleeping
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Never
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Somtimes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Often
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  12. Abusive to Others
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Never
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Somtimes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Often
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  13. Abusive to Self
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Never
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Somtimes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Often
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-left-big">
+                  Other cognitive/mental status information:
+                </td>
+              </tr>
+              <tr>
+                <td class="td-bottom td-left-big">
+                  <textarea name="name" class="form-control" rows="2" cols="60"></textarea>
+                </td>
+              </tr>
+            </table>
+            <div class="border-bottom"></div>
+          </li>
+
+          <li class="form-line">
+            <div class="border-bottom"><h3>Patient Ability to Take/Administer Medication:</h3></div>
+          </li>
+
+          <li class="form-line">
+
+            <table>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  1. Totally independent
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Never
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Somtimes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Always
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  2. Needs reminding
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Never
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Somtimes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Always
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  3. Non-compliant
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Never
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Somtimes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Always
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  4. Needs help preparing
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Never
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Somtimes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Always
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  5. Needs administration
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Never
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Somtimes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Always
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  6. Patient/caregiver can self-administer
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Never
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Somtimes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Always
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-left-big">
+                  If sometimes, please explain:
+                </td>
+              </tr>
+              <tr>
+                <td class="td-bottom td-left-big">
+                  <textarea name="name" class="form-control" rows="2" cols="60"></textarea>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-left-big">
+                  If patient is not self-administer, what arrangement have been made to administer medications?
+                </td>
+              </tr>
+              <tr>
+                <td class="td-bottom td-left-big">
+                  <textarea name="name" class="form-control" rows="2" cols="60"></textarea>
+                </td>
+              </tr>
+            </table>
+            <div class="border-bottom"></div>
+          </li>
+
+          <li class="form-line">
+            <div class="border-bottom"><h3>Elimination:</h3></div>
+          </li>
+
+          <li class="form-line">
+            <table>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  1. Bladder
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Continent
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Occasionally incontinent
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Incontinent
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  2. Bowel
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Continent
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Occasionally incontinent
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Incontinent
+                </td>
+              </tr>
+            </table>
+            <div class="border-bottom"></div>
+          </li>
+
+          <li class="form-line">
+            <div class="border-bottom"><h3>Identification of Service Needs:</h3></div>
+          </li>
+
+          <li class="form-line">
+            <table>
+              <tr>
+                <td class="form-label td-right-big">
+                  Ambulate Inside:
+                </td>
+                <td class="form-label">
+                  Ambulate Outside:
+                </td>
+              </tr>
+              <tr>
+                <td class="td-right-big td-bottom">
+                  <select class="form-control" name="">
+                    <option></option>
+                    <option>Without Help</option>
+                    <option>With Cane</option>
+                    <option>With Walker</option>
+                    <option>With Wheelchair</option>
+                    <option>With Personal Assist</option>
+                    <option>Unable</option>
+                    <option>N/A</option>
+                  </select>
+                </td>
+                <td class="td-bottom">
+                  <select class="form-control" name="">
+                    <option></option>
+                    <option>Without Help</option>
+                    <option>With Cane</option>
+                    <option>With Walker</option>
+                    <option>With Wheelchair</option>
+                    <option>With Personal Assist</option>
+                    <option>Unable</option>
+                    <option>N/A</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big">
+                  Get up from seated position:
+                </td>
+                <td class="form-label">
+                  Get up from bed:
+                </td>
+              </tr>
+              <tr>
+                <td class="td-right-big td-bottom">
+                  <select class="form-control" name="">
+                    <option></option>
+                    <option>Without Help</option>
+                    <option>With Cane</option>
+                    <option>With Walker</option>
+                    <option>With Wheelchair</option>
+                    <option>With Personal Assist</option>
+                    <option>Unable</option>
+                    <option>N/A</option>
+                  </select>
+                </td>
+                <td class="td-bottom">
+                  <select class="form-control" name="">
+                    <option></option>
+                    <option>Without Help</option>
+                    <option>With Cane</option>
+                    <option>With Walker</option>
+                    <option>With Wheelchair</option>
+                    <option>With Personal Assist</option>
+                    <option>Unable</option>
+                    <option>N/A</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big">
+                  Transfer to commode:
+                </td>
+                <td class="form-label">
+                  Transfer to wheelchair:
+                </td>
+              </tr>
+              <tr>
+                <td class="td-right-big td-bottom">
+                  <select class="form-control" name="">
+                    <option></option>
+                    <option>Without Help</option>
+                    <option>With Cane</option>
+                    <option>With Walker</option>
+                    <option>With Wheelchair</option>
+                    <option>With Personal Assist</option>
+                    <option>Unable</option>
+                    <option>N/A</option>
+                  </select>
+                </td>
+                <td class="td-bottom">
+                  <select class="form-control" name="">
+                    <option></option>
+                    <option>Without Help</option>
+                    <option>With Cane</option>
+                    <option>With Walker</option>
+                    <option>With Wheelchair</option>
+                    <option>With Personal Assist</option>
+                    <option>Unable</option>
+                    <option>N/A</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+            <br>
+            <table>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  Grooming:
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Independent
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial Assist
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Total Assist
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  Dressing:
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Independent
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial Assist
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Total Assist
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  Washing:
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Independent
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial Assist
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Total Assist
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  Bathing:
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Independent
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial Assist
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Total Assist
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  Feeding:
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Independent
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial Assist
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Total Assist
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  Meal Preperation:
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Independent
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial Assist
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Total Assist
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  Reheat Meals:
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Independent
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial Assist
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Total Assist
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  Toileting/Bathroom:
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Independent
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial Assist
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Total Assist
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  Laundry:
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Independent
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial Assist
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Total Assist
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  Shopping:
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Independent
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial Assist
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Total Assist
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  Housecleaning:
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Independent
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Partial Assist
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Total Assist
+                </td>
+              </tr>
+            </table>
+            <div class="border-bottom"></div>
+          </li>
+
+          <li class="form-line">
+            <div class="border-bottom"><h3>Other:</h3></div>
+          </li>
+
+          <li class="form-line">
+            <table>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  Does the patient have an Advance Directive?
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Yes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big" colspan="2">
+                  <input type="radio" name="name" value=""> No
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big">
+                  Can they speak/understand English?
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value=""> Yes
+                </td>
+                <td class="td-right-big td-bottom-big td-left-big" colspan="2">
+                  <input type="radio" name="name" value=""> No
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big" style="display:block">
+                  Other languages spoken:
+                </td>
+                <td class="td-right td-bottom-big td-left"style="display:block">
+                  <ul style="list-style:none">
+                    <li><input type="checkbox" name="name" value=""> Arabic</li>
+                    <li><input type="checkbox" name="name" value=""> French</li>
+                    <li><input type="checkbox" name="name" value=""> Italian</li>
+                    <li><input type="checkbox" name="name" value=""> Polish</li>
+                    <li><input type="checkbox" name="name" value="">
+                        <input style="margin-top:-20px; margin-left:15px;" type="text" size=10 class="form-control" name="name" placeholder="Other" value="">
+                    </li>
+                  </ul>
+                </td>
+                <td class="td-right td-bottom-big td-left" colspan="2">
+                  <ul style="list-style:none">
+                    <li><input type="checkbox" name="name" value=""> Chinese (Cantonese)</li>
+                    <li><input type="checkbox" name="name" value=""> German</li>
+                    <li><input type="checkbox" name="name" value=""> Japanise</li>
+                    <li><input type="checkbox" name="name" value=""> Russian</li>
+                  </ul>
+                </td>
+                <td class="td-right td-bottom-big td-left" colspan="2">
+                  <ul style="list-style:none">
+                    <li><input type="checkbox" name="name" value=""> Chinese (Mandarin)</li>
+                    <li><input type="checkbox" name="name" value=""> Hindi</li>
+                    <li><input type="checkbox" name="name" value=""> Korean</li>
+                    <li><input type="checkbox" name="name" value=""> Spanish</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-right-big td-bottom-big td-left-big" style="display:block">
+                  Additional Comments?
+                </td>
+              </tr>
+              <tr>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <textarea name="name" class="form-control" rows="3" cols="80"></textarea>
+                </td>
+              </tr>
+            </table>
+            <div class="border-bottom"></div>
+          </li>
+
+          <li class="form-line">
+            <div class="border-bottom"><h3>Emergency Priority Code:</h3></div>
+          </li>
+
+          <li class="form-line">
+            <table>
+              <tr>
+                <td class="form-label">
+                  Select One:
+                </td>
+              </tr>
+              <tr>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value="">
+                  Level 1 - High Priority - needs uninterrupted services. Must have care. In case of disaster every possible effort must be made to provide services to this patient.
+                </td>
+              </tr>
+              <tr>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value="">
+                   Level 2 - Moderate Priority - services for patients at this level may be postponed with telephone contact. A caregiver can provide basic care until the emergency situation can improve.
+                </td>
+              </tr>
+              <tr>
+                <td class="td-right-big td-bottom-big td-left-big">
+                  <input type="radio" name="name" value="">
+                   Level 3 - Low Priority - this patient may be stable and has access to informal resources to help them. They can safely miss a scheduled visit with basic care provided safely by family or other informal supports or by the patient themselves.
+                </td>
+              </tr>
+            </table>
+            <div class="border-bottom"></div>
+          </li>
+
+          <li class="form-line">
+            <div class="border-bottom"><h3>Certification:</h3></div>
+          </li>
+
+          <li class="form-line">
+            <table>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  This assessment is based on observation of the patient:
+                </td>
+                <td class="td-left-big td-bottom">
+                  <select class="form-control" name="">
+                    <option></option>
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  This assessment is based on information related to me by:
+                </td>
+              </tr>
+              <tr>
+                <td class="td-bottom">
+                  <textarea name="name" class="form-control" rows="2" cols="40"></textarea>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  Are there any other agency/vendor(s) providing services in the home to the patient?
+                </td>
+                <td class="td-left-big td-bottom">
+                  <select class="form-control" name="">
+                    <option></option>
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="form-label td-right td-bottom">
+                  If so, please provide the Contact and Service provided:
+                </td>
+              </tr>
+              <tr>
+                <td class="td-bottom">
+                  <textarea name="name" class="form-control" rows="2" cols="40"></textarea>
+                </td>
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <td class="form-label td-right-big td-bottom">
+                  Print Full Name
+                </td>
+                <td class="form-label td-left-big td-bottom">
+                  Rn License #
+                </td>
+                <td class="form-label td-left-big td-bottom">
+                  Date
+                </td>
+              </tr>
+              <tr>
+                <td class="form-label td-right-big td-bottom">
+                  <input type="text" size=40 class="form-control" name="name" value="">
+                </td>
+                <td class="form-label td-left-big td-bottom">
+                  <input type="text" class="form-control" name="name" value="">
+                </td>
+                <td class="form-label td-left-big td-bottom">
+                  <input type="date" class="form-control" name="name" value="">
+                </td>
+              </tr>
+            </table>
+            <br>
+            <div class="border-bottom"></div>
+          </li>
+
+          <li class="form-line">
+            <div class="border-bottom"><h3>Headings:</h3></div>
+          </li>
+
+          <li class="form-line">
+            ???????
+            <div class="border-bottom"></div>
+          </li>
+
+
+
+          <li class="form-line">
+            <div class="border-bottom"><h3>Vital Signs:</h3></div>
+          </li>
+
+          <li class="form-line">
+            <div class="">
+              <table>
+                <tr>
+                  <td class="form-label">Temperature</td>
+                  <td class="form-label">Pulse A/R</td>
+                  <td class="form-label">Respiration</td>
+                </tr>
+                <tr>
+                  <td class="td-right">
+                    <input size=35 class="form-control" type="text" name="co_email" placeholder="" value="">
+                  </td>
+                  <td class="td-right">
+                    <input size=35 class="form-control" type="text" name="co_email" placeholder="" value="">
+                  </td>
+                  <td class="td-right">
+                    <input size=35 class="form-control" type="text" name="co_email" placeholder="" value="">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="form-label">BP RT</td>
+                  <td class="form-label">BP LT</td>
+                  <td class="form-label"></td>
+                </tr>
+                <tr>
+                  <td class="td-right">
+                    <input size=35 class="form-control" type="text" name="co_email" placeholder="" value="">
+                  </td>
+                  <td class="td-right">
+                    <input size=35 class="form-control" type="text" name="co_email" placeholder="" value="">
+                  </td>
+                  <td class="td-right">
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <br>
+            <div class="border-bottom"></div>
+          </li>
+
+          <li class="form-line">
+            <div class="border-bottom"><h3>Health Information:</h3></div>
+          </li>
+
+          <li class="form-line">
+            <div class="">
+              <table>
+                <tr>
+                  <td class="form-label">Diagnosis:</td>
+                </tr>
+                <tr>
+                  <td>
+                    <textarea class="form-control" rows="3" cols="40"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="form-label">Allergies (if any):</td>
+                </tr>
+                <tr>
+                  <td>
+                    <textarea class="form-control" rows="3" cols="40"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="form-label">Nutritional requirements (if any):</td>
+                </tr>
+                <tr>
+                  <td>
+                    <textarea class="form-control" rows="3" cols="40"></textarea>
+                  </td>
+                </tr>
+              </table>
+              <br>
+            </div>
+            <div class="border-bottom"></div>
+          </li>
+
+        </ul>
+      </div>
+    </form>
+
+
+    <br>
+    <br>
+    <br>
+    <div class="">
+
+    </div>
+
+  </body>
+</html>
